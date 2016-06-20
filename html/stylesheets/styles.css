@@ -363,6 +363,8 @@ div.ace {
 @media (min-width: 720px) {
     div.frame {
         float:left;
+        top: 50px;
+        right: 100px;
     }
 
     #container {
