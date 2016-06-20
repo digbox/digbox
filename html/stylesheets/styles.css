@@ -305,7 +305,7 @@ div.ace {
     /* float: right; */
     position: absolute;
     top: 110px;
-    left: 230px;
+    left: -230px;
 } #exampleDisplay .edit_space {
     float: left;
     position: relative;
