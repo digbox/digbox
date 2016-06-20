@@ -300,12 +300,12 @@ div.ace {
     margin: auto;
     /* padding-right: 50px; */
     float: left;
-    width: 55%;
+    width: 85%;
     /* padding-right: 50px; */
     /* float: right; */
-    position: fixed;
-    top: 200px;
-    left: -70px;
+    position: absolute;
+    top: 110px;
+    left: 230px;
 } #exampleDisplay .edit_space {
     float: left;
     position: relative;
