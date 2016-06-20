@@ -1,25 +1,26 @@
 <!doctype html>
 <html>
 <body>
-<header>
-    <h1 style="display:inline">DIGS</h1>
-    <p style="display:inline">  dynamic, interactive geometry sandbox
+  <header>
+  <h1 style="display:inline">DIGS</h1>
+  <p style="display:inline">    a dynamic, interactive geometry sandbox.
 
-</p>
+  </p>
     <p class="view">
-        <a href="https://github.com/compugeom">
+      <nav>
+          <a style="float:left" href="https://github.com/digbox" >
             View My GitHub Profile
-        </a>
-    </p>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><strong>Sandbox</strong></li>
-            <li><a href="convex_hull.html">Examples</a></li>
-            <li><a href="reference.html">Reference</a></li>
+          </a>
+        <ul style="display:inline">
+          <li><a href="../index.html">Home</a></li>
+          <li><strong>Sandbox</strong></li>
+          <li><a href="convex_hull.html">Examples</a></li>
+          <li><a href="reference.html">Reference</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </p>
+
+  </header>
 </body>
 
 <head>
@@ -39,8 +40,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="https://p5js.org/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 <!-- <div class="wrapper">    -->
-<div id="container">
-    <!--<section class="left"> -->
+<div id="container" >
+    <section class="left">
     <div id="exampleDisplay">
         <div class="ace">
             <div class="edit_space">
@@ -58,10 +59,9 @@
             <button id="forwardButton" class="ctl_button">forward</button>
             <iframe id="exampleFrame" src="examples.html" ></iframe>
         </div>
-
-        <!--</section>-->
-    </div> <!--! end exampleDisplay -->
-    <!--scripts before close of body element -->
+    </div>
+    </section>
+</div>
 
 </div> <!-- end container -->
 <script src="../src/libraries/ace/ace.js"></script>
