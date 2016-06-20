@@ -270,8 +270,9 @@ div.processing {
 div.frame {
   width: 450px;
 	/* height: 700px; */
-	float: right;
-	position: relative;
+  float: right;
+  position: relative;
+  display:inline;
   left:15ex;
   top:30px;
   /*height:100%;*/
@@ -306,6 +307,7 @@ div.ace {
     /* padding-right: 50px; */
     /* float: right; */
     position:relative;
+    display:inline;
     top:30px;
     /*position: absolute;
     top: 110px;
