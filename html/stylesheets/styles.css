@@ -273,8 +273,8 @@ div.frame {
   float: right;
   position: relative;
   display:inline;
-  left:15ex;
-  top:30px;
+  left:10ex;
+  top:50px;
   /*height:100%;*/
   /*height:50px;*/
   /*position: static;*/
@@ -308,7 +308,7 @@ div.ace {
     /* float: right; */
     position:relative;
     display:inline;
-    top:30px;
+    top:50px;
     /*position: absolute;
     top: 110px;
     left: -230px;*/
@@ -363,7 +363,7 @@ div.ace {
 
     #container {
         margin: 2em auto;
-        width: 49em;
+        width: auto;
         padding: 0;
         height: auto;
         min-height: 100%;
