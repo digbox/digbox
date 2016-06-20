@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <body>
+    <header>
+      <h1>UConn Computational Geometry</h1>
+      <p></p>
+      <p class="view">
+        <a href="https://github.com/compugeom">
+          View My GitHub Profile
+        </a>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../sandbox.html">Sandbox</a></li>
+          <li><a href="../convex_hull.html">Examples</a></li>
+          <li><a href="../reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Compugeom.GitHub.io by compugeom</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="../width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+
+  <body>
+    <div class="wrapper">
+      <section class="left">
+         <h2>
+          CG_DynamicPointSet
+        </h2>
+
+        <h3>
+          Description
+        </h3>
+        <p>
+          A collection of vertices added by mouse clicks on the canvas.
+        </p>
+
+        <h3>
+          Constructor
+        </h3>
+        <p>
+          <code class="language-javascript">CG_DynamicPointSet()</code>
+        </p>
+
+        <h3>
+          Attributes
+        </h3>
+        <p>
+          <table>
+            <tbody>
+              <tr>
+                <td style="width:350px">
+                  <code class="language-javascript">[CG_Vertex] VertexList</code>
+                </td>
+                <td>
+                  An array of vertices in the point set.
+                </td>
+              </tr>
+              <tr>
+                <td style="width:350px">
+                  <code class="language-javascript">function updateFunction</code>
+                </td>
+                <td>
+                  A function that is run on each new point when added to the point set.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+        <h3>
+          Functions
+        </h3>
+        <p>
+          <table><tbody>
+            <tr>
+              <td style="width:350px">
+                <code class="language-javascript">CG_Vertex newPoint(Number x, Number y)</code>
+              </td>
+              <td>
+                Creates a new <code class="language-javascript">CG_Vertex</code> with coordinates <code class="language-javascript">x,y</code> and, if defined, runs <code class="language-javascript">updateFunction</code> on the new vertex.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:350px">
+                <code class="language-javascript">CG_Vertex whichVertex(Number x, Number y)</code>
+              </td>
+              <td>
+                Checks if there is already a vertex with coordinates <code class="language-javascript">x,y</code> in the point set.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:350px">
+                <code class="language-javascript">null mousePressed()</code>
+              </td>
+              <td>
+                Calls <code class="language-javascript">whichVertex()</code> on the current mouse location. If there is no vertex at this location, call <code class="language-javascript">newPoint()</code> on the current mouse lcoation.
+              </td>
+            </tr>
+          </tbody></table>
+        </p>
+      </section>
+<!--       <footer>
+        <p><small>This project was partially supported by the National Science Foundation under grant CCF-1525978.</small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer> -->
+    </div>
+    <script src="../javascripts/scale.fix.js"></script>
+  </body>
+</html>

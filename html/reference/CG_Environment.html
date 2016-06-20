@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+  <body>
+    <header>
+      <h1>UConn Computational Geometry</h1>
+      <p></p>
+      <p class="view">
+        <a href="https://github.com/compugeom">
+          View My GitHub Profile
+        </a>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../sandbox.html">Sandbox</a></li>
+          <li><a href="../convex_hull.html">Examples</a></li>
+          <li><a href="../reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Compugeom.GitHub.io by compugeom</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="../width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+ 
+  <body>    
+    <div class="wrapper">
+      <section class="left">
+        <h2>
+          CG_Environment
+        </h2>
+
+        <h3>
+          Description
+        </h3>
+        <p>
+          Handles Instatiation of objects that are to be drawn and maintains the order of execution and animation of our algorithm visualizer.
+        </p>
+
+        <h3>
+          Constructor
+        </h3>
+        <p>
+          <code class="language-javascript">CG_Environment(Number width, Number height)</code>
+        </p>
+
+        <h3>
+          Attributes
+        </h3>
+        <p>
+          <table>
+            <tbody>
+              <tr>
+                <td>
+                  <code class="language-javascript">Number width</code>
+                </td>
+                <td>
+                  Canvas width.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="language-javascript">Number height</code>
+                </td>
+                <td>
+                  Canvas height.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="language-javascript">Array things</code>
+                </td>
+                <td>
+                  2D array of objects sorted by dimension.
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <code class="language-javascript">CG_DynamicPointSet P</code>
+                </td>
+                <td>
+                  The drawing's point set.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+        <h3>
+          Functions
+        </h3>
+        <p>
+          <table><tbody>
+            <tr>
+              <td>
+                <code class="language-javascript">CG_Vertex Vertex(Number x, Number y)</code>
+              </td>
+              <td>
+                Instantiates a <code class="language-javascript">CG_Vertex</code> with coordinates (x, y) and adds it to  <code class="language-javascript">things[0]</code>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="language-javascript">CG_DynamicPointSet DynamicPointSet()</code>
+              </td>
+              <td>
+                Instantiates a <code class="language-javascript">CG_DynamicPointSet</code> and adds it to  <code class="language-javascript">things[0]</code>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="language-javascript">CG_Edge Edge(CG_Vertex u, CG_vertex v)</code>
+              </td>
+              <td>
+                Instantiates a <code class="language-javascript">CG_Edge</code> with endpoints <code class="language-javascript">u</code>, <code class="language-javascript">v</code> and adds it to <code class="language-javascript">things[1]</code>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="language-javascript">CG_Polygon Polygon()</code>
+              </td>
+              <td>
+                Instantiates a <code class="language-javascript">CG_Polygon</code> and adds it to <code class="language-javascript">things[1]</code>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="language-javascript">CG_PSLG PSLG()</code>
+              </td>
+              <td>
+                Instantiates a <code class="language-javascript">CG_PSLG</code> and adds it to <code class="language-javascript">things[1]</code>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="language-javascript">CG_Face Face(CG_Polygon C)</code>
+              </td>
+              <td>
+                Instantiates a <code class="language-javascript">CG_Face</code> with boundary <code class="language-javascript">C</code> and adds it to <code class="language-javascript">things[2]</code>.
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <code class="language-javascript">CG_Vertex initWalk(CG_PSLG G)</code>
+              </td>
+              <td>
+                Initializes the walk algorithm by creating a boundary outside the canvas and returning a boundary vertex.
+              </td>
+            </tr>
+          </tbody></table>
+        </p>
+      </section>
+<!--       <footer position:>
+        <p><small>This project was partially supported by the National Science Foundation under grant CCF-1525978.</small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer> -->
+    </div>
+    <script src="../javascripts/scale.fix.js"></script>
+  </body>
+</html>

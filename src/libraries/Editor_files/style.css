@@ -1,0 +1,199 @@
+.ace_editor {
+    position: relative !important;
+    border: 1px solid lightgray;
+    margin: auto;
+    height: 300px;
+    width: 80%;
+}
+
+.scrollmargin {
+    height: 500px;
+    text-align: center;
+}
+
+.column-span {
+    margin:0 0 0 1em;
+    padding:0;
+    float:left;
+}
+
+
+/*
+  //////////////////////////////////////////////////
+    LIBRARIES / LEARN
+  //////////////////////////////////////////////////
+*/
+.label {
+    position: relative;
+}
+.label h4 {
+    color: white;
+    position: absolute;
+    top: 0;
+    margin: 1em;
+}
+
+.label:hover h4 {
+    color:#ED225D;
+}
+
+
+#exampleDisplay, #exampleFrame, #exampleEditor {
+    width: 36em;
+    border: none;
+}
+
+#popupExampleFrame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+    /*display: none;*/
+    border: none;
+}
+
+/*#popupExampleFrame #exampleFrame {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}*/
+
+#exampleDisplay button {
+    color: #2D7BB6;
+    border-color: rgba(45,123,182, .25);
+    float: right;
+    margin: 0.5em 0 0 0.5em;
+    background: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+#exampleDisplay .edit_button {
+    left: 29em;
+}
+
+#exampleDisplay .reset_button {
+    left: 32em;
+}
+
+#exampleDisplay .edit_space {
+    position: relative;
+}
+
+#exampleFrame {
+    height: 22em;
+}
+
+#exampleEditor {
+    height: 500em;
+    width: 710px;
+    overflow: hidden;
+    margin-top: 0.5em;
+    color: #222;
+    font-family:
+            inconsolatamedium,
+            Consolas,
+            Monaco,
+            'Andale Mono',
+            monospace;
+    font-size: 1em !important;
+    background-color: #FFF;
+    line-height: 1em;
+}
+
+.ace_info {
+    background-color: #D7E5F5 !important;
+}
+
+.ace_warning {
+    background-color: #FFD700 !important;
+    color: #ffffff !important;
+}
+
+.ace_error {
+    background-color: #FF6347 !important;
+    color: #ffffff !important;
+}
+
+/* property, tag, boolean,
+   number, function-name, constant,
+   symbol */
+.ace_numeric,
+.ace_tag {
+    color: #DC3787 !important; /* not p5 pink, but related */
+}
+
+/* atrule, attr-value, keyword,
+   class-name */
+.ace_type,
+.ace_class,
+.ace_attribute-name {
+    color: #704F21 !important; /* darker brown */
+}
+
+/* selector, attr-name,
+function, builtin */
+.ace_function,
+.ace_keyword,
+.ace_support {
+    color: #00A1D3 !important; /* not p5 blue, but related */
+}
+
+/* comment, block-comment, prolog,
+   doctype, cdata */
+.ace_comment {
+    color: #A0A0A0 !important; /* light gray */
+}
+
+/* operator, entity, url,
+variable */
+.ace_string {
+    color: #a67f59 !important; /* og coy a67f59 a light brown */
+}
+
+.ace_operator {
+    color: #333 !important;
+}
+
+/* regex, important */
+.ace_regexp {
+    color: #e90 !important; /* og coy e90 orange */
+}
+
+
+.ace-gutter {
+    color: #333 !important;
+}
+
+.ace-gutter-layer {
+    color: #333 !important;
+}
+
+.ace_folding-enabled {
+    width: 10px !important;
+    color: #333 !important;
+}
+
+.ace_gutter-cell {
+    background-image: none !important;
+    padding-left: 10px !important;
+    overflow: hidden !important;
+    background-color: #AFAFAF !important;
+}
+
+.ace_content {
+    padding: 0em 0.5em !important;
+}
+
+.attribution {
+    background-color: #eee;
+    font-size: 15px;
+    padding: 10px;
+    margin:30px 0px 30px 0px;
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <body>
+    <header>
+      <h1>UConn Computational Geometry</h1>
+      <p></p>
+      <p class="view">
+        <a href="https://github.com/compugeom">
+          View My GitHub Profile
+        </a>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../sandbox.html">Sandbox</a></li>
+          <li><a href="../convex_hull.html">Examples</a></li>
+          <li><a href="../reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Compugeom.GitHub.io by compugeom</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="../width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+ 
+  <body>    
+    <div class="wrapper">
+      <section class="left">
+        <h2>
+          CG_Vertex
+        </h2>
+
+        <h3>
+          Description
+        </h3>
+        <p>
+          A drawable point.
+        </p>
+
+        <h3>
+          Constructor
+        </h3>
+        <p>
+          <code class="language-javascript">CG_Vertex(Number x, Number y)</code>
+        </p>
+
+        <h3>
+          Attributes
+        </h3>
+        <p>
+          <table>
+            <tbody>
+              <tr>
+                <td style="width:390px">
+                  <code class="language-javascript">Number x</code>
+                </td>
+                <td>
+                  <code class="language-javascript">x</code> coordinate of the vertex.
+                </td>
+              </tr>
+              <tr>
+                <td style="width:390px">
+                  <code class="language-javascript">Number y</code>
+                </td>
+                <td>
+                  <code class="language-javascript">y</code> coordinate of the vertex.
+                </td>
+              </tr>
+              <tr>
+                <td style="width:390px">
+                  <code class="language-javascript">CG_Halfedge h</code>
+                </td>
+                <td>
+                  The associated <code class="language-javascript">CG_Halfedge</code>.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+        <h3>
+          Functions
+        </h3>
+        <p>
+          <table><tbody>
+            <tr>
+              <td style="width:390px">
+                <code class="language-javascript">CG_HalfEdge handle(CG_Vertex v)</code>
+              </td>
+              <td>
+                Creates and returns an associated <code class="language-javascript">CG_HalfEdge</code> between this vertex and vertex <code class="language-javascript">v</code>.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:390px">
+                <code class="language-javascript">Boolean isIsolated()</code>
+              </td>
+              <td>
+                Checks if there is a HalfEdge associated with this vertex.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:390px">
+                <code class="language-javascript">Boolean isLeaf()</code>
+              </td>
+              <td>
+                Checks if this vertex is an endpoint.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:390px">
+                <code class="language-javascript">Boolean ccw(CG_Vertex a, CG_Vertex b)</code>
+              </td>
+              <td>
+                Checks if this vertex is below the line spanned by vertices <code class="language-javascript">a</code> and <code class="language-javascript">b</code>.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:390px">
+                <code class="language-javascript">Boolean visible(CG_HalfEdge, Boolean orient)</code>
+              </td>
+              <td>
+                Checks if this vertex is within the plane spanned by the half edges <code class="language-javascript">h.prev</code> and <code class="language-javascript">h</code> with orientation <code class="language-javascript">orient</code>.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:390px">
+                <code class="language-javascript">CG_HalfEdge inFace(CG_HalfEdge, Boolean orient)</code>
+              </td>
+              <td>
+                Checks if this vertex is in the face spanned by the half edge <code class="language-javascript">h</code> with orientation <code class="language-javascript">orient</code>. If so, it returns the half edge <code class="language-javascript">h</code>. <br> Otherwise, it returns the first half edge <code class="language-javascript">c</code> such that <code class="language-javascript">visible(c, orient) = false</code>.
+              </td>
+            </tr>
+          </tbody></table>
+        </p>
+      </section>
+      </section>
+<!--       <footer>
+        <p><small>This project was partially supported by the National Science Foundation under grant CCF-1525978.</small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer> -->
+    </div>
+    <script src="../javascripts/scale.fix.js"></script>
+  </body>
+</html>

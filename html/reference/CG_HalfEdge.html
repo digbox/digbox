@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+  <body>
+    <header>
+      <h1>UConn Computational Geometry</h1>
+      <p></p>
+      <p class="view">
+        <a href="https://github.com/compugeom">
+          View My GitHub Profile
+        </a>
+      </p>
+      <nav>
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../sandbox.html">Sandbox</a></li>
+          <li><a href="../convex_hull.html">Examples</a></li>
+          <li><a href="../reference.html">Reference</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Compugeom.GitHub.io by compugeom</title>
+
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
+    <meta name="viewport" content="../width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+ 
+  <body>    
+    <div class="wrapper">
+      <section class="left">
+         <h2>
+          CG_HalfEdge
+        </h2>
+
+        <h3>
+          Description
+        </h3>
+        <p>
+          An oriented half edge.
+        </p>
+
+        <h3>
+          Constructor
+        </h3>
+        <p>
+          <code class="language-javascript">CG_HalfEdge(CG_Vertex v)</code>
+        </p>
+
+        <h3>
+          Attributes
+        </h3>
+        <p>
+          <table>
+            <tbody>
+              <tr>
+                <td style="width:350px">
+                  <code class="language-javascript">CG_Edge e</code>
+                </td>
+                <td>
+                  The edge associated with this half edge.
+                </td>
+              </tr>
+              <tr>
+                <td style="width:350px">
+                  <code class="language-javascript">CG_Vertex v</code>
+                </td>
+                <td>
+                  The vertex associated with this half edge (root vertex of edge <code class="language-javascript">e</code>)
+                </td>
+              </tr>
+              <tr>
+                <td style="width:350px">
+                  <code class="language-javascript">CG_HalfEdge next</code>
+                </td>
+                <td>
+                  The next half edge in a graph.
+                </td>
+              </tr>
+              <tr>
+                <td style="width:350px">
+                  <code class="language-javascript">CG_HalfEdge prev</code>
+                </td>
+                <td>
+                  The previous half edge in a graph.
+                </td>
+              </tr>
+              <tr>
+                <td style="width:350px">
+                  <code class="language-javascript">CG_HalfEdge twin</code>
+                </td>
+                <td>
+                  The twin half edge associated with edge <code class="language-javascript">e</code>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+        <h3>
+          Functions
+        </h3>
+        <p>
+          <table><tbody>
+            <tr>
+              <td style="width:350px">
+                <code class="language-javascript">null ConnectTo(CG_HalfEdge h)</code>
+              </td>
+              <td>
+                Sets half edge <code class="language-javascript">h</code> as <code class="language-javascript">next</code>, sets this half edge as <code class="language-javascript">h.prev</code>.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:350px">
+                <code class="language-javascript">null detach()</code>
+              </td>
+              <td>
+                Removes references to this half edge from the associated vertex and the next, previous half edges.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:350px">
+                <code class="language-javascript">Boolean orient(CG_Vertex q)</code>
+              </td>
+              <td>
+                Runs the lineside test to check if vertex <code class="language-javascript">q</code> is above or below the edge associated with this oriented half edge.
+              </td>
+            </tr>
+            <tr>
+              <td style="width:350px">
+                <code class="language-javascript">CG_Polygon getCycle()</code>
+              </td>
+              <td>
+                Return the cycle (polygon) defined by this half edge (if any).
+              </td>
+            </tr>
+          </tbody></table>
+        </p>
+      </section>
+<!--       <footer>
+        <p><small>This project was partially supported by the National Science Foundation under grant CCF-1525978.</small></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer> -->
+    </div>
+    <script src="../javascripts/scale.fix.js"></script>
+  </body>
+</html>

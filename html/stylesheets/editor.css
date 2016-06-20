@@ -1,0 +1,80 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+#container{
+    display:block;
+    width:1100px;
+    height: auto;
+    position: relative;
+}
+
+#exampleFrame { /* Visualization Frame */
+    width: 500px;
+    height:400px;
+    position: fixed;
+    left:  50px;
+    top:   85px;
+    padding: 10px;
+    margins:auto;
+}
+
+#exampleEditor { /* Text Editing Frame */
+    border: 1px solid;
+    height: auto;
+    float: right;
+    top: 75px;
+    width: 500px;
+    overflow: hidden;
+    font-family:
+            monospace;
+    font-size: 1.1em !important;
+    line-height: 1em;
+}
+
+#exampleDisplay button { /*affects both run and reset buttons */
+    border-radius: 3px;
+    color: #F9EE98;
+    border-color: #333333;
+    float: right;
+    margin: 0.5em 0 0 0.5em;
+    background: #222222;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+#exampleDisplay .run_button {
+    /*placement of run button*/
+    top: 515px;
+    left: 980px;
+}
+
+#exampleDisplay .reset_button {
+    /*placement of reset button*/
+    top: 515px;
+    left: 1030px;
+}
+
+.edit_space button {
+    font-family: monospace;
+    font-size: 1.2em;
+    color: #ccc;
+    border: 1px solid rgba(200, 200, 200, .9);
+    background: transparent;
+    outline: none;
+}
+
+.freeze {
+    overflow: hidden;
+}
+
+.column-span {
+    margin:0 0 0 1em;
+    padding:0;
+    float:left;
+}

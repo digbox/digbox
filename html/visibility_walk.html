@@ -1,0 +1,115 @@
+<html>
+<body>
+<header>
+    <h1>UConn Computational Geometry</h1>
+    <p></p>
+    <p class="view">
+        <a href="https://github.com/compugeom">
+            View My GitHub Profile
+        </a>
+    </p>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="sandbox.html">Sandbox</a></li>
+            <li><strong>Examples</strong></li>
+            <li><a href="reference.html">Reference</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Compugeom.GitHub.io by compugeom</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+
+<body id="learn-page">
+<!-- <script src="src/libraries/jquery-1.9.1.min.js"></script> -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://p5js.org/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<!-- <div class="wrapper">    -->
+<div id="container">
+    <!--<section class="left"> -->
+    <div id="exampleDisplay">
+        <div class="frame">
+            <button id="animateButton" class="ctl_button" onclick="change()">animate on</button>
+            <button id="rewindButton" class="ctl_button">rewind</button>
+            <button id="playButton" class="ctl_button">play</button>
+            <button id="pauseButton" class="ctl_button">pause</button>
+            <button id="forwardButton" class="ctl_button">forward</button>
+            <iframe id="exampleFrame" src="examples.html" ></iframe>
+        </div>
+        <div class="ace">
+            <div class="edit_space">
+                <button id="runButton" class="edit_button">run</button>
+                <button id="resetButton" class="reset_button">reset</button>
+                <select id="dropdown" class="dropdown" onChange="startExample()">
+                    <option value="convex_hull">convex hull</option>
+                    <option selected="selected" value="visibility_walk">visibility walk</option>
+                </select>
+            </div>
+            <div id="exampleEditor"></div>
+        </div>
+        <!--</section>-->
+    </div> <!--! end exampleDisplay -->
+    <!--scripts before close of body element -->
+
+</div> <!-- end container -->
+<script src="../src/libraries/ace/ace.js"></script>
+<!-- examples.js generates the iframe which hosts the actual p5 code -->
+<script src="../src/examples.js"></script>
+
+<script type="text/javascript">
+    function change() {
+        var elem = document.getElementById("animateButton");
+        if (elem.innerHTML=="animate on") elem.innerHTML = "animate off";
+        else elem.innerHTML = "animate on";
+    }
+</script>
+
+<script type="text/javascript">
+    function startExample() {
+        var val = document.getElementById("dropdown").value;
+        if(val == "convex_hull") {
+            // window.open('convex_hull.html', '_self',false);
+            convex_hull();
+        }
+        else if(val == "visibility_walk"){
+            // window.open('visibility_walk.html','_self', false);
+            vis_walk();
+        }
+    }
+</script>
+
+<script type="text/javascript">
+    function convex_hull() {
+        window.open('convex_hull.html','_self',false);
+    }
+</script>
+<script type="text/javascript">
+    function vis_walk() {
+        window.open('visibility_walk.html','_self',false);
+    }
+</script>
+
+<script>
+    $(document).ready( function () {
+        examples.init('../drawing/visibility_walk.js');
+    });
+</script>
+
+<footer>
+    <p><small>This project was partially supported by the National Science Foundation under grant CCF-1525978.</small></p>
+    <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+</footer>
+</body>
+</html>
